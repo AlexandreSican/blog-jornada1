@@ -2,7 +2,7 @@
 
 ** Aqui você econtrará o primeiro desafio da minha jornada pessoal para estudo de font-end. **
 
-Acesse meu hub dos desafios aqui: <a href="https://github.com/AlexandreSican/front-end-study" target="blank">Hub Jornada</a>
+Acesse meu hub dos desafios aqui: <a href="https://github.com/AlexandreSican/front-end-study" target="_blank">Hub Jornada</a>
 
 ## Foi usado:
   - HTML
@@ -14,4 +14,4 @@ Este projeto é o início de uma jornada para estudo. Nele eu desenvolvi uma pá
 Foi um projeto simples, mas que me trouxe de volta a essência que é desenvolver front-end. 
 
 <h3> Te espero no próximo capítulo desta jornada</h3>
-Acesse clicando aqui: <a href="https://github.com/AlexandreSican/front-end-study" target="blank">HUB Jornada</a>
+Acesse clicando aqui: <a href="https://github.com/AlexandreSican/front-end-study" target="_blank">HUB Jornada</a>
