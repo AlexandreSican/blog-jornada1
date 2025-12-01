@@ -1,0 +1,148 @@
+:root {
+    --dark-10: #121214;
+    --dark-20: #17171A;
+    --dark-30: #202024;
+    --dark-40: #252529;
+    --dark-50: #AFABB6;
+    --dark-60: #FFFFFF;
+
+    --brand-color: #E07B67;
+
+    --primary-typography: "Space Grotesk", sans-serif;
+    --secondary-typography: "Inter", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--primary-typography);
+    overflow-x: hidden;
+    background-color: var(--dark-10);
+}
+
+.container{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+
+    .menuContainer {
+        width: 100vw;
+        background-color: var(--dark-20);
+        height: 280px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 48px;
+
+
+        span{
+            color: var(--brand-color);
+        }
+
+        h1{
+            color: white;
+        }
+
+        input{
+            width: 1216px;
+            background-color: var(--dark-30);
+            color: var(--dark-50);
+            border: 2px solid var(--dark-40);
+            border-radius: 8px;
+            padding: 16px 24px;
+            font-size: 20px;
+        }
+    }
+
+    .contentContainer{
+        background-color: var(--dark-10);
+        width: 100vw;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin-top: 40px;
+        
+
+        .postCard {
+            width: 100vw;
+            max-width: 1280px;
+            background-color: var(--dark-20);
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            padding: 40px 0;
+
+            .postDate {
+                width: 100%;
+                height: 40px;
+                display: flex;
+                justify-content: space-between;
+                padding: 0 40px;
+                align-items: center;
+                gap: 20px;
+                background-color: var(--dark-20);
+                span{
+                    color: var(--brand-color);
+                }
+            }
+
+
+            .postContent{
+
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                padding: 0 40px;
+                gap: 16px;
+                background-color: var(--dark-20);
+
+                h2{
+                    color: var(--dark-60);
+                    background-color: var(--dark-20);
+                }
+
+                p{
+                    color: var(--dark-50);
+                    background-color: var(--dark-20);
+                }
+            }
+        }
+    }
+
+
+    
+}
+
+
+.activeBorder{
+    border: 2px solid var(--brand-color);
+    border-radius: 8px;
+}
+
+
+#icon {
+  fill: #17171A;
+  stroke: #E07B67;
+  stroke-width: 7;
+  transition: fill 0.3s;
+  cursor: pointer;
+  background-color: var(--dark-20);
+}
+
+
+#icon.filled {
+  fill: #E07B67;
+}
+
+#icon:hover{
+    transform: scale(1.1)
+}
