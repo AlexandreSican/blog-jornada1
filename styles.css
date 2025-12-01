@@ -12,7 +12,7 @@
     --secondary-typography: "Inter", sans-serif;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -21,7 +21,7 @@
     background-color: var(--dark-10);
 }
 
-.container{
+.container {
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -38,15 +38,15 @@
         gap: 48px;
 
 
-        span{
+        span {
             color: var(--brand-color);
         }
 
-        h1{
+        h1 {
             color: white;
         }
 
-        input{
+        input {
             width: 1216px;
             background-color: var(--dark-30);
             color: var(--dark-50);
@@ -57,7 +57,7 @@
         }
     }
 
-    .contentContainer{
+    .contentContainer {
         background-color: var(--dark-10);
         width: 100vw;
 
@@ -66,7 +66,7 @@
         align-items: center;
 
         margin-top: 40px;
-        
+
 
         .postCard {
             width: 100vw;
@@ -89,13 +89,14 @@
                 align-items: center;
                 gap: 20px;
                 background-color: var(--dark-20);
-                span{
+
+                span {
                     color: var(--brand-color);
                 }
             }
 
 
-            .postContent{
+            .postContent {
 
                 width: 100%;
                 display: flex;
@@ -105,12 +106,12 @@
                 gap: 16px;
                 background-color: var(--dark-20);
 
-                h2{
+                h2 {
                     color: var(--dark-60);
                     background-color: var(--dark-20);
                 }
 
-                p{
+                p {
                     color: var(--dark-50);
                     background-color: var(--dark-20);
                 }
@@ -119,30 +120,74 @@
     }
 
 
-    
+
 }
 
-
-.activeBorder{
+.postCard:hover {
     border: 2px solid var(--brand-color);
     border-radius: 8px;
 }
 
 
 #icon {
-  fill: #17171A;
-  stroke: #E07B67;
-  stroke-width: 7;
-  transition: fill 0.3s;
-  cursor: pointer;
-  background-color: var(--dark-20);
+    fill: #17171A;
+    stroke: #E07B67;
+    stroke-width: 7;
+    transition: fill 0.3s;
+    cursor: pointer;
+    background-color: var(--dark-20);
 }
 
 
 #icon.filled {
-  fill: #E07B67;
+    fill: #E07B67;
 }
 
-#icon:hover{
+#icon:hover {
     transform: scale(1.1)
+}
+
+
+
+/* Responsividade (TABLET)*/
+
+@media (max-width: 770px) {
+    .menuContainer {
+
+        input {
+            width: 704px !important;
+        }
+    }
+
+    .contentContainer{
+        padding: 0 32px;
+    }
+}
+
+@media (max-width: 375px) {
+    .menuContainer {
+
+        input {
+            width: 300px !important;
+        }
+    }
+
+    .contentContainer{
+        padding: 0 24px;
+    }
+
+
+    .postContent{
+        h2{
+            font-size: 16px;
+        }
+
+        p{
+            font-size: 14px;
+        }
+    }
+
+    .postCard{
+        gap: 20px;
+    }
 }
